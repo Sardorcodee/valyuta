@@ -1,10 +1,7 @@
 function ret() {
-  let summa = document.querySelector("#nam").value;
-  let tepa = document.querySelector("#tepa1").value;
-  let pass = document.querySelector("#pass2").value;
-  let ay = document.querySelector(".rev");
-  let ayla = document.querySelector(".search");
-  console.log(summa);
+  summa = document.querySelector("#nam").value;
+  pass = document.querySelector(".pass2").value;
+  tepa = document.querySelector(".tepa1").value;
   if (tepa == "UZS" && pass == "USD") {
     UZS = 1;
     USD = 0.000089;
@@ -78,7 +75,20 @@ function ret() {
     P *= summa;
     natija.innerHTML = `${P * EUR} euro`;
   }
-  ay.addEventListener("click", () => {
-    ayla.setAttribute("class", "colrev search flex");
-  });
+}
+function letl(){
+pass3 = document.querySelector(".pass2").value;
+tepa3 = document.querySelector(".tepa1").value;
+if (tepa3 == "UZS") {
+  document.getElementById("UZ").setAttribute("class", "nen");
+}
+if (tepa3 == "USD") {
+  document.getElementById("US").setAttribute("class", "nen");
+}
+if (tepa3 == "EUR") {
+  document.getElementById("EU").setAttribute("class", "nen");
+}
+if (tepa3 == "P") {
+  document.getElementById("P").setAttribute("class", "nen");
+}
 }

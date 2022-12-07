@@ -19,18 +19,21 @@
       <h1>Valyuta kursi  <i class="fa-solid fa-money-bill-1-wave"></i></h1>
       <input type="number" id="nam" placeholder="So'mma" />
       <div class="search flex">
-        <select id="tepa1">
-          <option value="USD">AQSh dollar (USD)</option>
+        <select class="tepa1" onclick="letl()">
+          <option selected disabled>Tanlang</option>
           <option value="UZS">O&#39;zbekiston sum (UZS)</option>
+          <option value="USD">AQSh dollar (USD)</option>
           <option value="EUR">Evro (EUR)</option>
           <option value="P">Rubl (P)</option>
         </select>
         <div class="rev"><i class="fa-sharp fa-solid fa-repeat"></i></div>
-        <select id="pass2">
-          <option value="UZS">O&#39;zbekiston sum (UZS)</option>
-          <option value="USD">AQSh dollar (USD)</option>
-          <option value="EUR">Evro (EUR)</option>
-          <option value="P">Rubl (P)</option>
+        <select class="pass2" onclick="letl()">
+          
+          <option selected disabled>Tanlang</option>
+          <option id="UZ" value="UZS">O&#39;zbekiston sum (UZS)</option>
+          <option id="US" value="USD">AQSh dollar (USD)</option>
+          <option id="EU" value="EUR">Evro (EUR)</option>
+          <option id="P" value="P">Rubl (P)</option>
         </select>
       </div>
       <button type="submit" onclick="ret()">Aylantirish</button>
