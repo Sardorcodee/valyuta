@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Valyuta kursi</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Valyuta kursi  <i class="fa-solid fa-money-bill-1-wave"></i></h1>
+      <input type="number" id="nam" placeholder="So'mma" />
+      <div class="search flex">
+        <select id="tepa1">
+          <option value="USD">AQSh dollar (USD)</option>
+          <option value="UZS">O&#39;zbekiston sum (UZS)</option>
+          <option value="EUR">Evro (EUR)</option>
+          <option value="P">Rubl (P)</option>
+        </select>
+        <div class="rev"><i class="fa-sharp fa-solid fa-repeat"></i></div>
+        <select id="pass2">
+          <option value="UZS">O&#39;zbekiston sum (UZS)</option>
+          <option value="USD">AQSh dollar (USD)</option>
+          <option value="EUR">Evro (EUR)</option>
+          <option value="P">Rubl (P)</option>
+        </select>
+      </div>
+      <button type="submit" onclick="ret()">Aylantirish</button>
+      <h2 id="natija"></h2>
+    </div>
+
+    <!-- jsjsjsjsjsjjss -->
+    <script src="js/js/valyuta.js"></script>
+  </body>
+</html>

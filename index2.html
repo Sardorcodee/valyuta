@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>10-dars</title>
+  </head>
+  <body class="py-6 bg-slate-200">
+    <div class="container m-auto px-4">
+      <h1 class="bg-dark text-4xl text-center font-bold">To Do List</h1>
+      <form class="flex p-5" id="form">
+        <input
+          class="border-lime-600 border-2 rounde-l border-solid flex-1 p-3 placeholder-lime-600 focus:outline-blue-500 focus:placeholder-blue-500 bg-slate-200"
+          type="text"
+          id="input"
+          placeholder="To Do name..."
+        />
+        <button
+          type="submit"
+          class="border-lime-600 border-2 px-8 py-2 text-lime-700 hover:bg-lime-600 hover:text-white"
+        >
+          Add
+        </button>
+      </form>
+      <div id="table" class="flex-col flex gap-3">
+        <div class="flex">
+          <li id="text" class="list-none pl-5 text-2xl text-dark-600">
+            hkhvjkkj
+          </li>
+          <div class="btn ml-auto pr-5 flex gap-3">
+            <button onclick="save()" class="text-lime-600 text-2xl">
+              <i class="fa-solid fa-circle-check"></i>
+            </button>
+            <button id="edit" class="text-blue-600 text-2xl">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+            <button id="del" class="text-red-600 text-2xl">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <button id="reset"
+          class="p-2 border-2 border-lime-600 text-lime-600 hover:bg-lime-600 hover:text-white rounded"
+        >
+          Clean Items
+        </button>
+      </div>
+    </div>
+
+    <!-- js js js  -->
+    <script src="js/js/Taiwand.js"></script>
+    <script src="js/js/app.js"></script>
+  </body>
+</html>
